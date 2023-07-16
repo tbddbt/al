@@ -11,7 +11,11 @@ function getColumnFormat_Stage_1() {
       {
         editor: 'select', 
         selectOptions: ['Option 1', 'Option 2', 'Option 3'],
-      },{},{},{type: 'date',},{},{},{},{},{type: 'date',},{},{type: 'date',},{},{},{type: 'date',},{},{},{type: 'checkbox'},
+      },{},{},{type: 'date',},{},{},{},{},{type: 'date',},{},{type: 'date',},{},{},{type: 'date',},
+      {
+        editor: 'select', 
+        selectOptions: ['Accept','Reject'],
+      },{},{type: 'checkbox'},
     ];
     return columns;
   }
