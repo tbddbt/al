@@ -4,8 +4,11 @@
 <head>
     <meta charset="utf-8">
     <title>Handsontable Example</title>
+    <link rel="stylesheet prefetch" href="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.4.2/chosen.css">
     <link rel="stylesheet" href="{% static 'handsontable/handsontable.full.min.css' %}">
     <script src="{% static 'handsontable/handsontable.full.min.js' %}"></script>
+    <script src="{% static 'https://cdnjs.cloudflare.com/ajax/libs/chosen/1.4.2/chosen.jquery.js' %}"></script>
+    <script src="{%static 'handsontable-chosen-editor.js'%}"></script>
     <script src="{% static 'utility.js' %}"></script>
     <script src="{% static 'Raw_1.js' %}"></script>
     <script src="{% static 'Raw_2.js' %}"></script>
@@ -220,7 +223,7 @@
 	<input type="text" id="handsontable-container-title" hidden readonly><br><br>
 	<div id="handsontable-container-data"></div>
 	
-    	<button id="download_file">Download</button>
+    <button id="download_file">Download</button>
 	<button id="save_file">Save</button>
 </body>
 </html>
